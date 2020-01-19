@@ -1,0 +1,72 @@
+h1,h2{
+  font-weight:100;
+}
+
+.text-white{
+  color:white;
+}
+
+.btn-white{
+  color:white;
+  border:1px solid white;
+  padding:15px 0;
+  font-size:20px;
+  background:rgba(0, 0, 0, 0.0);
+  &:hover{
+    color:white;
+  }
+}
+
+.top-hero-wrapper{
+  width:100vw;
+  height:100vh;
+  background-image: url(bg-top.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  background-color:#464646;
+}
+
+.top-hero-container{
+  padding-top:220px;
+  h1{
+    font-size:56px;
+    margin-bottom:20px;
+  }
+  h2{
+    margin-bottom:20px;
+  }
+}
+
+// user css
+
+.form-control{
+  height:45px;
+}
+
+.user-new-wrapper{
+  width:100vw;
+  height:100vh;
+  background-image: url("bg-top.png");
+  background-position:center;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:#464646;
+}
+
+.user-new-container{
+  padding-top:220px;
+  
+  .form-group{
+    margin-bottom:20px;
+  }
+}
+
+.alert{
+  margin-bottom:0;
+  position:fixed;
+  width:100%;
+  z-index:10000;
+}
