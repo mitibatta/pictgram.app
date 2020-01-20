@@ -7,9 +7,9 @@ class User < ApplicationRecord
   validates :email, format:{ with: /\A[\w+-.]+@[a-z\d\-.]+\.[a-z]+\z/i}
   validates :email, uniqueness: true
   
-  validates :password_digest, length:{minimum:8}
-  validates :password_digest, length:{maximum:32}
-  validates :password_digest, format:{ with: /\A[a-zA-Z0-9]+\z/}
+  validates :password, length:{minimum:8}
+  validates :password, length:{maximum:32}
+  validates :password, format:{ with: /\A[\w]+\z/}
   
   has_secure_password
 end
