@@ -12,4 +12,6 @@ class User < ApplicationRecord
   validates :password, format:{ with: /\A[\w]+\z/}
   
   has_secure_password
+  
+  has_many :topics
 end
