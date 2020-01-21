@@ -3,6 +3,10 @@ class TopicsController < ApplicationController
     @topic = Topic.new
   end
   
+  def index
+    @topics = Topic.all
+  end
+  
   def create
     @topic = current_user.topics.new(params_topic)
     
