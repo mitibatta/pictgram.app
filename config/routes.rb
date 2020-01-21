@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-  # get 'pages/index'
+  get 'favorites/index'
+  post '/favorites', to:"favorites#create"
+  delete '/favorites', to:'favorites#destroy'
+  
   root 'pages#index'
   get 'pages/help'
   get 'users/new'
