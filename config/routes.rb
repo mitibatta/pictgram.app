@@ -14,6 +14,10 @@ Rails.application.routes.draw do
   delete '/logout', to:'sessions#destroy'
   
   resources :topics
+  
+  get 'comments/new'
+  post '/comments', to: 'comments#create'
+  
   # resources :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
