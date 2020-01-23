@@ -20,8 +20,11 @@
           <%= image_tag "comment.png", class:"topic-index-icon" %>
           <% end %>
           <p class="topic-text"><%= topic.description %></p>
-          <h2>コメント</h2>
-          <p class="topic-text"><%= topic.comment.description %></p>
+          <h4 class="topic-text">コメント</h4>
+          <% topic.comments.each do |comment| %>
+          <h5 class="topic-author"><%= comment.user.name %></h5>
+          <p class="topic-text"><%= comment.description %></p>
+          <% end %>
         </div>
       </div>
     </div>
